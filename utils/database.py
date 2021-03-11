@@ -1,9 +1,8 @@
 from .database_connection import DatabaseConnection
 
 """
-Concerned with storing and retrieving books from a json file.
-Format:
-name,author,read
+
+Note: Comments
 
 """
 

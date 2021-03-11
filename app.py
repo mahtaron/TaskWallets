@@ -2,7 +2,6 @@ from utils import database, current_time
 import os
 from getpass import getpass
 
-
 current_user_id = None
 USER_CHOICE_ADMIN = """
 Enter:
@@ -22,7 +21,6 @@ Enter:
 - 'q' to quit
 
 Your choice: """
-
 
 USER_CHOICE_USER = """
 Enter:
@@ -92,7 +90,7 @@ def prompt_user_login():
     welcome = "Wrong Username Or Password!"
     while welcome == "Wrong Username Or Password!":
         username = input('Enter Your Username: ')
-        
+
         password = getpass('Enter Your Password: ')
         welcome = f"Welcome, {username}" if database.user_login(username, password) else "Wrong Username Or Password!"
         print(welcome)
